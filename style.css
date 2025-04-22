@@ -7,19 +7,16 @@ body {
 
 .container {
     background: #fff;
-    padding: 25px;
+    border: 3px dashed #0078d7;
     border-radius: 10px;
     display: inline-block;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: width 0.4s, height 0.4s;
 }
 
 #myImage {
-    width: 200px;
-    height: auto;
-    /* or
-    aspect-ratio: 1 / 1; (if you want a square)
-    */
-    transition: width 0.4s ease;
+    transition: width 0.4s, height 0.4s;
     display: block;
     margin: 0 auto 15px auto;
 }
@@ -33,6 +30,15 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+
 #resizeBtn:hover {
     background: #005fa3;
+}
+
+.sizeDisplay {
+    margin-top: 15px;
+    color: #0078d7;
+    font-weight: bold;
+    font-size: 1.05em;
+    letter-spacing: 1px;
 }
