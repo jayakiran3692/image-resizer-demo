@@ -6,24 +6,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div id="container" class="container" style="width: 200px; height: 200px;">
         <img
             id="myImage"
             src="assets/indian-teenage-girl-laughing-and-enjoying-mr-no-671-FG1MTH.jpg"
             alt="Sample Image"
+            width="200"
+            height="200"
         >
-        <br>
-        <label>
-            Width (px):
-            <input type="number" id="widthInput" min="1" value="200">
-        </label>
-        <br><br>
-        <label>
-            Height (px):
-            <input type="number" id="heightInput" min="1" value="200">
-        </label>
-        <br><br>
-        <button id="resizeBtn">Resize Image</button>
+    </div>
+    <br>
+    <label>
+        Width (px):
+        <input type="number" id="widthInput" min="1" value="200">
+    </label>
+    <label>
+        Height (px):
+        <input type="number" id="heightInput" min="1" value="200">
+    </label>
+    <button id="resizeBtn">Resize Image</button>
+    <div id="sizeDisplay" class="sizeDisplay">
+        Viewport &lt;div&gt; style and &lt;img&gt; size: 200px × 200px
     </div>
     <script src="resize.js"></script>
 </body>
