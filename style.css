@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#myImage {
+    width: 200px;
+    height: auto;
+    /* or
+    aspect-ratio: 1 / 1; (if you want a square)
+    */
+    transition: width 0.4s ease;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+#resizeBtn {
+    padding: 10px 22px;
+    font-size: 16px;
+    background: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#resizeBtn:hover {
+    background: #005fa3;
+}
